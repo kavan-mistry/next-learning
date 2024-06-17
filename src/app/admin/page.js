@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
-// import { promises as fs } from 'fs';
+import '../globals.css'
 import { useEffect, useState } from 'react';
 
 const page = () => {
