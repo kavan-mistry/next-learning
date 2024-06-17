@@ -1,10 +1,12 @@
 'use client'
 
-import { useSelector } from "react-redux"
+import { removeUser } from "@/app/redux/slice"
+import { useDispatch, useSelector } from "react-redux"
 
 export default function DisplayUsers() {
 
     const userData = useSelector((data) => data.users)
+    const dispatch = useDispatch()
     console.log(userData)
     return (
         <div className="container-fluid">
@@ -13,9 +15,14 @@ export default function DisplayUsers() {
             </h1>
             {
                 userData.map((items) => (
-                    <li>
-                        {items.name}
-                    </li>
+                    <div className="p-2">
+                        <span>
+                            👉🏽 {items.name}
+                        </span>
+                        <button 
+                        className="btn btn-outline-danger btn-sm ms-4"
+                        onClick={()=>dispatch(removeUser(items.id))}>Remove</button>
+                    </div>
                 ))
             }
         </div>
