@@ -4,7 +4,7 @@ import Navbar from '../src/app/common/navbar/Navbar';
 
 describe('Navbar component', () => {
 
-  it('renders the navbar with brand icon and links', () => {
+  it('renders the navbar', () => {
     
     render(<Navbar />);
 
