@@ -1,9 +1,10 @@
-// src/__tests__/page.test.js
+import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Page from '../src/app/page';
+import { useRouter } from 'next/navigation';
 
-jest.mock('next/router', () => ({
+jest.mock('next/navigation', () => ({
   useRouter() {
     return {
       route: '/',
@@ -26,9 +27,11 @@ jest.mock('next/router', () => ({
 }));
 
 describe('Page', () => {
+
   it('renders a heading', () => {
     render(<Page />);
     const heading = screen.getByRole('heading', { level: 1 });
     expect(heading).toBeInTheDocument();
   });
+  
 });

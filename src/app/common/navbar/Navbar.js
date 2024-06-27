@@ -6,26 +6,26 @@ import Link from 'next/link';
 const Navbar = () => {
     return (
         <>
-            <div class="container">
+            <div className="container">
 
-                <nav class="navbar navbar-expand">
+                <nav className="navbar navbar-expand">
 
-                    <div class="container-sm" id="nav-div">
-                        <ul class="navbar-nav flex-row">
-                            <a class="navbar-brand" href="">
-                                <i class="bi-emoji-sunglasses content-center"></i>
+                    <div className="container-sm" id="nav-div">
+                        <ul className="navbar-nav flex-row">
+                            <a className="navbar-brand" href="">
+                                <i className="bi-emoji-sunglasses content-center"></i>
                             </a>
-                            <li class="nav-item">
-                                <Link class="nav-link" aria-current="page" href={'/'}>Home</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" aria-current="page" href={'/'}>Home</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" aria-current="page" href={'/dashboard'}>Dashboard</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" aria-current="page" href={'/dashboard'}>Dashboard</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" aria-current="page" href={'./admin'}>Admin</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" aria-current="page" href={'./admin'}>Admin</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" aria-current="page" href={'./red'}>Redux</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" aria-current="page" href={'./red'}>Redux</Link>
                             </li>
                         </ul>
                     </div>

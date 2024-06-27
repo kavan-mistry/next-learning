@@ -16,7 +16,7 @@ function page() {
   return (
     <>
       
-      <h1 class="text-rainbow-animation container-fluid">Kavan Mistry</h1>
+      <h1 className="text-rainbow-animation container-fluid">Kavan Mistry</h1>
 
     </>
   )
